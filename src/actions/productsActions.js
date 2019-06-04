@@ -8,7 +8,7 @@ import {
 } from "./types";
 
 export const showProducts = () => async dispatch => {
-  const response = await axios.get("http://localhost:5000/products");
+  const response = await axios.get("https://my-json-server.typicode.com/Extibax/React-Redux-CRUD/products");
 
   dispatch({
     type: SHOW_PRODUCTS,
@@ -17,7 +17,7 @@ export const showProducts = () => async dispatch => {
 };
 
 export const showProduct = id => async dispatch => {
-  const response = await axios.get(`http://localhost:5000/products/${id}`);
+  const response = await axios.get(`https://my-json-server.typicode.com/Extibax/React-Redux-CRUD/products/${id}`);
 
   dispatch({
     type: SHOW_PRODUCT,
@@ -26,7 +26,7 @@ export const showProduct = id => async dispatch => {
 };
 
 export const deleteProduct = id => async dispatch => {
-  await axios.delete(`http://localhost:5000/products/${id}`);
+  await axios.delete(`https://my-json-server.typicode.com/Extibax/React-Redux-CRUD/products/${id}`);
 
   dispatch({
     type: DELETE_PRODUCT,
@@ -35,7 +35,7 @@ export const deleteProduct = id => async dispatch => {
 };
 
 export const addProduct = product => async dispatch => {
-  const response = await axios.post("http://localhost:5000/products", product);
+  const response = await axios.post("https://my-json-server.typicode.com/Extibax/React-Redux-CRUD/products", product);
 
   dispatch({
     type: ADD_PRODUCT,
@@ -45,7 +45,7 @@ export const addProduct = product => async dispatch => {
 
 export const editProduct = product => async dispatch => {
   const response = await axios.put(
-    `http://localhost:5000/products/${product.id}`,
+    `https://my-json-server.typicode.com/Extibax/React-Redux-CRUD/products/${product.id}`,
     product
   );
 
