@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "name": "Pastel de Vainilla ",
+      "price": "1000"
+    },
+    {
+      "id": 3,
+      "name": "Pastel de Nuez",
+      "price": "75"
+    },
+    {
+      "name": "Pastel de Zanahoria",
+      "price": "45",
+      "id": 4
+    },
+    {
+      "name": "Pastel de Chocolate",
+      "price": "60",
+      "id": 5
+    },
+    {
+      "name": "Pastel de Fresa",
+      "price": "60",
+      "id": 6
+    },
+    {
+      "name": "Roles de Canela",
+      "price": "60",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "name": "Pastel de Vainilla con Chocolate",
+      "price": "125"
+    }
+  ]
+}
